@@ -1,0 +1,143 @@
+.attendance__panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* ボタンを中央揃え */
+    gap: 20px;
+    /* ボタン間のスペース */
+    margin-top: 20px;
+}
+
+.attendance__panel form {
+    width: 45%;
+    /* ボタンの幅を50%未満にして2つ並べる */
+}
+
+.attendance__panel button {
+    width: 100%;
+    /* 各ボタンをフォームの幅に合わせる */
+    height: 230px;
+    /* ボタンの高さ */
+    background-color: white;
+    /* 背景を白に */
+    color: black;
+    /* 文字色を黒に */
+    border: 2px solid #ccc;
+    /* 枠線を少し太めに */
+    border-radius: 10px;
+    /* ボタンの角を丸くする */
+    font-size: 18px;
+    /* 文字サイズを大きく */
+    cursor: pointer;
+    text-align: center;
+}
+
+.attendance__panel button:hover {
+    background-color: #f0f0f0;
+    /* ホバー時の背景色を変更 */
+}
+
+.attendance__alert {
+    text-align: center;
+    /* テキストを中央揃え */
+    font-weight: bold;
+    /* 太字にする */
+    font-size: 20px;
+    /* 文字のサイズを大きく */
+    margin-bottom: 10px;
+    /* 下に余白を追加 */
+}
+
+table {
+    width: 100%;
+    /* テーブルの幅を100%に設定 */
+    border-collapse: collapse;
+    /* セルの間の余白を無くす */
+    table-layout: fixed;
+    /* 各セルを等間隔に配置 */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    /* セルに枠線を追加 */
+    padding: 12px;
+    /* セル内の余白を追加 */
+    text-align: center;
+    /* テキストを中央揃え */
+}
+
+th {
+    background-color: #f4f4f4;
+    /* ヘッダーの背景色 */
+    font-weight: bold;
+    /* ヘッダーを太字に */
+}
+
+/* ナビゲーションのページネーションの設定 */
+.nav__pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* ページネーション全体のスタイル */
+.Pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* アイテム間にスペースを追加 */
+}
+
+/* ページネーションアイテムのリンクスタイル */
+.Pagination-Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    color: #111;
+    font-weight: bold;
+    border-radius: 50%;
+    /* ボタンを円形に */
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 軽いシャドウで立体感 */
+    cursor: pointer;
+    border: none;
+    /* 枠線をなしに */
+}
+
+/* ページネーションアイコンのスタイル */
+.Pagination-Item-Link-Icon {
+    width: 18px;
+    height: auto;
+}
+
+/* アクティブなページネーションアイテムのスタイル */
+.Pagination-Item-Link.isActive {
+    background-color: #111;
+    color: #fff;
+    pointer-events: none;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    /* アクティブなボタンに強調シャドウ */
+}
+
+/* ホバー時のスタイル */
+.Pagination-Item-Link:not(.isActive):hover {
+    background-color: #111;
+    color: #fff;
+}
+
+/* 初回、最終ページに対して特別なスタイル */
+.Pagination-Item-Link:first-child,
+.Pagination-Item-Link:last-child {
+    width: 35px;
+    /* ナビゲーション用アイコンを小さめに */
+    height: 35px;
+    background-color: #ddd;
+    /* 灰色背景で区別 */
+    border-radius: 50%;
+}

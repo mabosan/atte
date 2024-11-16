@@ -1,0 +1,80 @@
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer {
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer__inner {
+    margin:  auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.footer__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.header-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    /* 右揃え */
+}
+
+.header-nav__item {
+    margin-left: 40px;
+    /* 項目間のスペースを小さく調整 */
+}
+
+.header-nav__link {
+    text-decoration: none;
+    padding: 8px 16px;
+    /* ボタンのパディングを小さくして、横幅を減らす */
+    background-color: white;
+    /* 背景色を白に */
+    color: black;
+    /* 文字色を黒に */
+    cursor: pointer;
+}
+
+.header-nav__button{
+        text-decoration: none;
+        padding: 8px 10px;
+        /* ボタンのパディングを小さくして、横幅を減らす */
+        background-color: white;
+        /* 背景色を白に */
+        color: black;
+        /* 文字色を黒に */
+        cursor: pointer;
+    }
+
+.header-nav__link:hover,
+.header-nav__button:hover {
+    background-color: #f0f0f0;
+    /* ホバー時に少し色を変える */
+}

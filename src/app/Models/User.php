@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'confirm-password',
     ];
 
     /**
@@ -41,4 +42,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * ユーザーが持つ情報とのリレーションシップを定義します。
+     */
+    public function works()
+    {
+        return $this->hasMany(Work::class);
+    }
+
+    public function rests()
+    {
+        return $this->hasManyThrough(Rest::class, Work::class);
+    }
 }
